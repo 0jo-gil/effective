@@ -1,6 +1,5 @@
 'use client';
 
-import Dropdown from "@/components/drowpdown/Dropdown";
 import SelectUsage from "@/components/drowpdown/SelectUsage";
 
 const SelectPage = () => {
@@ -9,7 +8,7 @@ const SelectPage = () => {
             <h1>Select Components Page</h1>
 
             {/* <Dropdown /> */}
-            <SelectUsage items={['edit', 'delete', 'add']} />
+            <SelectUsage items={['edit', 'delete', 'add']}/>
         </div>
     )
 }
