@@ -1,12 +1,15 @@
 const DropdownMenu = ({
-                          items, onItemClick
-                      }: {
-    items: string[],
-    onItemClick: (item: string) => void
+    children
+    //   items, onItemClick
+}: {
+    children: React.ReactNode
+    // items: string[],
+    // onItemClick: (item: string) => void
 }) => {
     return (
         <div className={'dropdown-menu'}>
-            {
+            {children}
+            {/* {
                 items.map((item, index) => (
                     <div
                         key={index}
@@ -16,7 +19,7 @@ const DropdownMenu = ({
                         {item}
                     </div>
                 ))
-            }
+            } */}
         </div>
     )
 }

@@ -1,13 +1,13 @@
 const Trigger = ({
-                     label,
-                     onClick
-                 }: {
-    label: string;
+    as,
+    onClick
+}: {
+    as: React.ReactNode | string;
     onClick: () => void;
 }) => {
     return (
         <div className={"trigger"} onClick={onClick}>
-            <span className={"selection"}>{label}</span>
+            <span className={"selection"}>{as}</span>
         </div>
     )
 }
